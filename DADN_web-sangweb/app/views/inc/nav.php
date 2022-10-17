@@ -9,7 +9,7 @@
       $result = CategoryModel::getAllClient();
       $listCategory = $result->fetch_all(MYSQLI_ASSOC);
     ?>
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <nav class="navbar navbar-expand-md navbar-custom navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../views/home.php">LOGO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,12 +52,19 @@
                   </ul>
                 </li>
                 <?php } else { ?>
-                <li class="nav-item">
-                  <a class="nav-link" href="../views/regist.php">Đăng ký</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../views/login.php">Đăng nhập</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+                      Đăng nhập / Đăng ký
+                    </a>
+                      <ul class="dropdown-menu dropdown-menu-light">
+                        <li class="nav-item">
+                          <a class="nav-link" href="../views/regist.php">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../views/login.php">Đăng nhập</a>
+                        </li>
+                      </ul>
+                  </li>
               <?php  }
               ?>
               <li class="nav-item">
