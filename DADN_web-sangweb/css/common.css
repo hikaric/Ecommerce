@@ -11,7 +11,11 @@
 }*/
 
 body {
-    background-color: #efefef;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Tsunami_by_hokusai_19th_century.jpg') no-repeat center center fixed;
+    /*webkit-background-size: cover;*/
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 ul {
