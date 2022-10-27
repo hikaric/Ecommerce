@@ -11,21 +11,26 @@
     ?>
       <nav class="navbar navbar-expand-md navbar-custom navbar-light sticky-top">
         <div class="container-fluid">
+          <!--Logo-->
           <a class="navbar-brand" href="../views/home.php">LOGO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!--Search bar-->
           <div class="collapse navbar-collapse" id="navbarNav">
           <form action="../views/home.php"class="d-flex me-auto">
+            <!--Enter field-->
             <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search" name="search-key" required>
-            <button class="btn btn-outline-light" type="submit" name="search-submit"><i class="fa-solid fa-magnifying-glass" ></i></button>
+            <!--Search button-->
+            <button class="btn btn-outline-dark" type="submit" name="search-submit"><i class="fa-solid fa-magnifying-glass" ></i></button>
           </form>
           <ul class="navbar-nav my-2 my-lg-0">
+              <!--Classify-->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
-                  Danh mục
+                  Danh mục hàng hóa
                 </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
+                  <ul class="dropdown-menu dropdown-menu-light navbar-custom">
                   <?php
       
                     foreach ($listCategory as $category) { 
@@ -36,27 +41,32 @@
                   ?>
                   </ul>
               </li>
+              <!--Intro-->
               <li class="nav-item">
                 <a href="../views/intro.php" class="nav-link">Giới thiệu</a>
               </li>
+              <!--Account management-->
               <?php
+                /*Logged in*/
                 if (isset($_SESSION['user_id'])) { ?>
                   <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
                     <?=$_SESSION['user_name'] ?>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
+                  <ul class="dropdown-menu dropdown-menu-light navbar-custom">
                     <li><a class="dropdown-item" href="../controllers/orderController.php?action=myOrder">Đơn hàng của tôi</a></li>
                     <li><a class="dropdown-item" href="../views/infoUser.php?user_id=<?=$_SESSION['user_id']?>">Thông tin tài khoản</a></li>
                     <li><a class="dropdown-item" href="../views/logout.php">Đăng xuất</a></li>
                   </ul>
                 </li>
                 <?php } else { ?>
-                <li class="nav-item dropdown">
+                  <!--Have not logged in-->
+
+                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
                       Đăng nhập / Đăng ký
                     </a>
-                      <ul class="dropdown-menu dropdown-menu-light">
+                      <ul class="dropdown-menu dropdown-menu-light navbar-custom">
                         <li class="nav-item">
                           <a class="nav-link" href="../views/regist.php">Đăng ký</a>
                         </li>
@@ -65,8 +75,11 @@
                         </li>
                       </ul>
                   </li>
+
+                
               <?php  }
               ?>
+              <!--Cart-->
               <li class="nav-item">
                 <a class="nav-link position-relative" href="../views/cart.php" style="width: 34px;"><i class="fa-solid fa-cart-shopping"></i> 
                 <span class="position-absolute top-10 start-100 translate-middle badge rounded-circle bg-danger">
