@@ -16,26 +16,26 @@
                 <button type="button" data-bs-target="#thecarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#thecarousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#thecarousel" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#thecarousel" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#thecarousel" data-bs-slide-to="4"></button>
+                <!--<button type="button" data-bs-target="#thecarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#thecarousel" data-bs-slide-to="4"></button>-->
             </div>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://img.freepik.com/free-vector/kindergarten-school-scene-with-two-children-playing-toys-room_1308-61743.jpg?t=st=1655493033~exp=1655493633~hmac=855248686d9e7b0cd04b5c24413d1a1adb442dd3fded21b1a4653b3ef936dd40&w=996" alt="First slide" class="d-block w-100" height="500px">
+                    <img src="https://img.freepik.com/free-vector/online-shopping-banner-with-3d-shopping-cart-clouds-social-icons-vector-illustration_548887-100.jpg" alt="First slide" class="d-block w-100" height="300px">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://putatu.com/storage/campaign/f774561620f3dcf730d66fffd820d278.png" alt="Second slide" class="d-block w-100" height="500px">
+                    <img src="https://pixelixe.com/blog/images/67/ecommerce-banner-automation.jpg" alt="Second slide" class="d-block w-100" height="300px">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://i.pinimg.com/originals/60/37/ed/6037ed9add0170c6d368caa182dd7b22.png" alt="Third slide" class="d-block w-100" height="500px">
+                    <img src="https://cdn3.vectorstock.com/i/1000x1000/79/37/black-friday-sale-design-vector-10817937.jpg" alt="Third slide" class="d-block w-100" height="300px">
+                </div>
+                <!--<div class="carousel-item">
+                    <img src="https://www.crushpixel.com/static17/preview2/black-friday-sale-banner-background-2649923.jpg" alt="Third slide" class="d-block w-100" height="300px">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://i.pinimg.com/originals/7f/1f/bb/7f1fbbdf63ab5b49e50dc0de5441fab7.png" alt="Third slide" class="d-block w-100" height="500px">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://u6wdnj9wggobj.vcdn.cloud/media/mgs_blog/s/i/sinh-nhat-mykingdom-1004.jpg" alt="Third slide" class="d-block w-100" height="500px">
-                </div>
+                    <img src="https://u6wdnj9wggobj.vcdn.cloud/media/mgs_blog/s/i/sinh-nhat-mykingdom-1004.jpg" alt="Third slide" class="d-block w-100" height="300px">
+                </div>-->
             </div>
 
             <button type="button" class="carousel-control-prev" data-bs-target="#thecarousel" data-bs-slide="prev">
