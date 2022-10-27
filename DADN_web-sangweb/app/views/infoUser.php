@@ -19,9 +19,9 @@
 ?>
 <body>
     <?php require_once 'inc/nav.php'; ?>
-    <div class="container-md my-5 px-5">
+    <div class="container-md my-5 px-5 bg-custom">
         <h3>Thông tin tài khoản</h3>
-        <div class="container-fluid px-3 bg-light">
+        <div class="container-fluid px-3 bg-custom">
             <div class="row">
                 <div class="col-md-6 self-info border border-2 border-start-0 border-top-0 border-bottom-0 py-3">
                     <h5>Thông tin cá nhân</h5>
