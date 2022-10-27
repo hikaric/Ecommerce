@@ -15,7 +15,7 @@
 <div class="pb-5">
 
 
-<div class="container-fluid my-5">
+<div class="container-fluid my-5 bg-custom">
 <h4>GIỎ HÀNG</h4>
 <?php
     if(!isset($_SESSION['user_id'])&&isset($_SESSION['cart'])&&count($_SESSION['cart'])!=0) { ?>
@@ -119,7 +119,7 @@
                     </tr>
                     </thead>
 
-                    <tbody class="table-light text-center align-middle">
+                    <tbody class="bg-custom text-center align-middle">
       
                         <?php
                             while($value = $result->fetch_assoc()){
@@ -176,7 +176,7 @@
             </div>
 
             <div class="col-xl-3 p-0">
-                <div class="bg-light p-3">
+                <div class="bg-custom p-3">
                     <div class="row border border-2 border-start-0 border-end-0 border-top-0 mb-3">
                         <div class="col">
                             <span class="fw-bold">Tổng tiền</span>
@@ -208,7 +208,7 @@
                             </div>
 
                             <div class="d-flex flex-column">
-                                <input class="btn btn-warning" type="submit" name="paymentAction" value="Payment">
+                                <input class="btn btn-warning" type="submit" name="paymentAction" value="Thanh toán">
                             </div>
                         </form>
                     </div>
