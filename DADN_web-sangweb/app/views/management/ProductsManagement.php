@@ -16,7 +16,7 @@
 <?php require_once '../views/inc/sidebar.php'; ?>
 
  <main style="margin-left: 220px" class="p-3">
-  <div class="container-fluid my-5 bg-light py-3">
+  <div class="container-fluid my-5 bg-custom py-3">
 	<h4>Danh sách sản phẩm</h4>
 	<div class="table-responsive-lg">
 	<table class="table table-hover">
