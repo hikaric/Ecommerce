@@ -16,7 +16,7 @@
 <body>
 <?php require_once '../views/inc/sidebar.php'; ?>
 <main style="margin-left: 220px" class="p-3">
-	<div class="container-fluid my-5 bg-light py-3">
+	<div class="container-fluid my-5 bg-custom py-3">
 	<h1>BÌNH LUẬN VÀ ĐÁNH GIÁ</h1>
 
 <p>Tổng số bình luận: <?php echo $sumComment ?></p>
