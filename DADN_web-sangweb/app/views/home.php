@@ -93,7 +93,7 @@
                         </div>
                         </a>
 					<!-- The products name -->
-                        <div class="card-body">
+                        <div class="card-body bg-custom">
                             <h5 class="card-title"><?php echo $data['name'] ?></h5>
 						<!--p class="name"><,?php echo $data['name'] ?></p-->
 					<!-- The products price formatted with two decimals  -->
