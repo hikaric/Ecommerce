@@ -60,3 +60,8 @@ li a {
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.bg-custom {
+    --bs-bg-opacity: 1;
+    background-color: #f2edd9;
+}
