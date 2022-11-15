@@ -41,7 +41,7 @@
 				    <td><img src="<?php echo "../../image/".$value['image']?>" width="100px" height="100px"></td>
 				    <td><?php echo $value['name']?></td>
 				    <td>
-                    <form action="../controllers/script.php" method="get">
+                    <form onSubmit="return sendTo('../controllers/script.php?quantity-update=1&'+$(this).serialize())" method="get">
                         <div class="input-group">
                             <span class="input-group-btn">
                             <button type="submit" name="quantity-update" class="btn btn-number" data-type="minus" data-field="<?= $value['id']?>">
@@ -84,7 +84,7 @@
 			</tr>
 
 			<tr> <!-- The clear cart button -->
-				<td colspan="6"> <a href="../controllers/script.php?clear-cart" class="btn btn-danger">Dọn dẹp giỏ hàng</a> </td>
+				<td colspan="6"> <a onclick="sendTo('../controllers/script.php?clear-cart')">Dọn dẹp giỏ hàng</a> </td>
 			</tr>
             </tbody>
         </table>
@@ -128,7 +128,7 @@
 				        <td><img src="<?php echo "../../image/".$value['image']?>" width="100px" height="100px"></td>
 				        <td><?php echo $value['name']?></td>
 				        <td>
-                        <form action="../controllers/script.php" method="get">
+                        <form onClick="return sendTo('../controllers/script.php')" method="get">
                             <div class="input-group">
                                 <span class="input-group-btn">
                                 <button type="submit" name="quantity-update-user" class="btn btn-number" data-type="minus" data-field="<?= $value['id']?>">
@@ -168,7 +168,7 @@
 			        </tr>
 
 			        <tr> <!-- The clear cart button -->
-				        <td colspan="6"> <a href="../controllers/script.php?clear-cart-user" class="btn btn-danger">Dọn dẹp giỏ hàng</a> </td>
+				        <td colspan="6"> <a onClick="sendTo('../controllers/script.php?clear-cart-user')" class="btn btn-danger">Dọn dẹp giỏ hàng</a> </td>
 			        </tr>
                     </tbody>
                 </table>
